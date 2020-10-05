@@ -1,0 +1,23 @@
+{
+  "name": "@sterblue/example-module-threads-master",
+  "version": "20.9.0",
+  "private": true,
+  "description": "Parallel computing using threads, example",
+  "license": "UNLICENSED",
+  "author": "Vincent Lecrubier <vincent.lecrubier@sterblue.com>",
+  "main": "./src/index.ts",
+  "files": [
+    "/lib/**/*"
+  ],
+  "scripts": {
+    "build": "yarn build:lib",
+    "build:lib": "tsc ; echo ok",
+    "clean": "rm -rf lib"
+  },
+  "dependencies": {
+    "@sterblue/example-module-threads-worker": "workspace:*",
+    "threads": "1.6.3",
+    "ts-node": "9.0.0",
+    "typescript": "4.0.3"
+  }
+}

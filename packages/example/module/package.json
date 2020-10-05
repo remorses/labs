@@ -1,0 +1,26 @@
+{
+  "name": "@sterblue/example-module",
+  "version": "20.9.0",
+  "description": "example module",
+  "license": "UNLICENSED",
+  "author": "Vincent Lecrubier <vincent.lecrubier@sterblue.com>",
+  "private": true,
+  "sideEffects": false,
+  "main": "./src/index.ts",
+  "files": [
+    "/lib/**/*"
+  ],
+  "scripts": {
+    "build": "yarn build:lib",
+    "build:lib": "tsc ./src/**/* --outDir ./lib",
+    "clean": "rm -rf lib"
+  },
+  "dependencies": {
+    "lodash": "4.17.20",
+    "seedrandom": "3.0.5"
+  },
+  "devDependencies": {
+    "@types/lodash": "4.14.161",
+    "@types/seedrandom": "2.4.28"
+  }
+}

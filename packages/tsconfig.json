@@ -1,0 +1,74 @@
+{
+  "compilerOptions": {
+    "composite": true
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "algorithms"
+    },
+    {
+      "path": "apps"
+    },
+    {
+      "path": "brand"
+    },
+    {
+      "path": "cli"
+    },
+    {
+      "path": "connectors"
+    },
+    {
+      "path": "curiosity"
+    },
+    {
+      "path": "data"
+    },
+    {
+      "path": "development"
+    },
+    {
+      "path": "example"
+    },
+    {
+      "path": "geometry"
+    },
+    {
+      "path": "sterblue"
+    },
+    {
+      "path": "kokonutz"
+    },
+    {
+      "path": "native"
+    },
+    {
+      "path": "operations"
+    },
+    {
+      "path": "perception"
+    },
+    {
+      "path": "photogrammetry"
+    },
+    {
+      "path": "pipeline"
+    },
+    {
+      "path": "react"
+    },
+    {
+      "path": "transforms"
+    },
+    {
+      "path": "utils"
+    },
+    {
+      "path": "superblock"
+    },
+    {
+      "path": "web"
+    }
+  ]
+}
