@@ -45,15 +45,15 @@ module.exports = {
       roots: ["<rootDir>/packages"],
       testEnvironment: "jest-environment-jsdom-fourteen",
       setupFiles: ["react-app-polyfill/jsdom"],
-      setupFilesAfterEnv: ["<rootDir>/Scripts/jest/setupTests.ts"],
+      setupFilesAfterEnv: ["<rootDir>/Scripts/jest/setup-tests.ts"],
       testMatch: [
         "<rootDir>/packages/*/*/src/**/__tests__/**/*.web.{ts,tsx}"
       ],
       transform: {
         "^.+\\.(js|jsx|ts|tsx)$": require.resolve("babel-jest"),
-        "^.+\\.css$": "<rootDir>/Scripts/jest/cssTransform.js",
+        "^.+\\.css$": "<rootDir>/Scripts/jest/css-transform.js",
         "^(?!.*\\.(js|jsx|ts|tsx|css|json)$)":
-          "<rootDir>/Scripts/jest/fileTransform.js"
+          "<rootDir>/Scripts/jest/file-transform.js"
       },
       transformIgnorePatterns: [
         "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",

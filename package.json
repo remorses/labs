@@ -2,11 +2,14 @@
   "name": "@sterblue/labs",
   "private": true,
   "workspaces": [
-    "packages/*"
+    "packages/*/*",
+    "!packages/example/app-electron-react",
+    "!packages/example/app-react-native"
   ],
   "scripts": {
     "echo": "echo ok",
     "clean": "rm -rf packages/**/**/lib",
+    "build:current": "node -r ./babel-register.js ./scripts/compile.ts $@",
     "lint:eslint": "eslint --ext .ts,.tsx --format stylish --no-color packages/",
     "test": "jest"
   },
@@ -16,10 +19,12 @@
     "@babel/preset-env": "7.11.5",
     "@babel/preset-react": "7.10.4",
     "@babel/preset-typescript": "7.10.4",
+    "@babel/register": "7.11.5",
     "@typescript-eslint/eslint-plugin": "4.4.0",
     "@typescript-eslint/parser": "4.4.0",
     "babel-jest": "26.5.0",
     "core-js": "3.6.5",
+    "dotenv": "8.2.0",
     "eslint": "7.10.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jest": "24.0.2",
