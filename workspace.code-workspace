@@ -1,0 +1,11 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "prettier.packageManager": "yarn",
+    "terminal.integrated.scrollback": 100000
+  }
+}

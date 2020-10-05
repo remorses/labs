@@ -1,2 +1,5 @@
-# sterblue
-The product offered by Sterblue to its end users
+# Sterblue Labs
+
+https://labs.sterblue.com/
+
+Sterblue Open Source and Open Engineering initiative

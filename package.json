@@ -1,0 +1,55 @@
+{
+  "name": "@sterblue/labs",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "echo": "echo ok",
+    "clean": "rm -rf packages/**/**/lib",
+    "lint:eslint": "eslint --ext .ts,.tsx --format stylish --no-color packages/",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "7.11.6",
+    "@babel/plugin-proposal-export-default-from": "7.10.4",
+    "@babel/preset-env": "7.11.5",
+    "@babel/preset-react": "7.10.4",
+    "@babel/preset-typescript": "7.10.4",
+    "@typescript-eslint/eslint-plugin": "4.4.0",
+    "@typescript-eslint/parser": "4.4.0",
+    "babel-jest": "26.5.0",
+    "core-js": "3.6.5",
+    "eslint": "7.10.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jest": "24.0.2",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-react": "7.21.3",
+    "eslint-plugin-react-hooks": "4.1.2",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "26.5.0",
+    "jest-environment-jsdom-fourteen": "1.0.1",
+    "jest-environment-node": "26.5.0",
+    "jest-pnp-resolver": "1.2.2",
+    "jest-watch-typeahead": "0.6.1",
+    "prettier": "2.1.2",
+    "react-app-polyfill": "1.0.6",
+    "typescript": "4.0.3"
+  },
+  "resolutions": {
+    "@emotion/core": "10.0.28",
+    "@emotion/styled": "10.0.27",
+    "@emotion/styled-base": "10.0.28",
+    "@types/graphql": "14.2.0",
+    "graphql": "14.6.0",
+    "mmmagic": "0.5.3",
+    "fsevents": "2.1.2",
+    "sharp": "0.21.3"
+  },
+  "engines": {
+    "node": ">=10.18.1",
+    "yarn": ">=1.22.0"
+  }
+}
