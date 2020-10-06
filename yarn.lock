@@ -2688,7 +2688,6 @@ __metadata:
   dependencies:
     "@types/lodash": 4.14.161
     "@types/seedrandom": 2.4.28
-    "@yarnpkg/core": 2.3.0
     lodash: 4.17.20
     seedrandom: 3.0.5
   languageName: unknown
