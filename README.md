@@ -1,4 +1,7 @@
-![Sterblue Labs Logo](https://github.com/sterblue/labs/raw/master/website/public/logos/Overview%20Humaaans.png)
+
+<p align="center">
+<img src="https://github.com/sterblue/labs/raw/master/website/public/logos/Sterblue%20Gradient@2x.png" style="max-height:300px; text-align: center"></img>
+</p>
 
 # Sterblue Labs
 
