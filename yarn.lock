@@ -2688,6 +2688,7 @@ __metadata:
   dependencies:
     "@types/lodash": 4.14.161
     "@types/seedrandom": 2.4.28
+    "@yarnpkg/core": 2.3.0
     lodash: 4.17.20
     seedrandom: 3.0.5
   languageName: unknown
@@ -2706,6 +2707,7 @@ __metadata:
     "@babel/register": 7.11.5
     "@typescript-eslint/eslint-plugin": 4.4.0
     "@typescript-eslint/parser": 4.4.0
+    "@yarnpkg/core": 2.3.0
     "@yarnpkg/pnpify": 2.3.1
     babel-jest: 26.5.0
     core-js: 3.6.5
@@ -3885,7 +3887,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/core@npm:^2.3.0":
+"@yarnpkg/core@npm:2.3.0, @yarnpkg/core@npm:^2.3.0":
   version: 2.3.0
   resolution: "@yarnpkg/core@npm:2.3.0"
   dependencies:

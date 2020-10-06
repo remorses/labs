@@ -7,18 +7,13 @@
     "!packages/example/app-react-native"
   ],
   "scripts": {
-    "here:echo": "echo $INIT_CWD",
-    "here:clean": "rm -rf \"$INIT_CWD/lib\" \"$INIT_CWD/dist\" \"$INIT_CWD/bin\"",
-    "here:babel": "babel --extensions .tsx,.ts --out-dir \"$INIT_CWD/lib\" \"$INIT_CWD/src\"",
-    "here:webpack": "babel --extensions .tsx,.ts --out-dir \"$INIT_CWD/lib\" \"$INIT_CWD/src\"",
-    "here:eslint": "eslint --ext .ts,.tsx --format stylish --no-color \"$INIT_CWD/src\"",
-    "here:test": "jest \"$INIT_CWD\"",
-    "all:echo": "yarn workspaces foreach --all --topological-dev --parallel --jobs ${CI_LERNA_CONCURRENCY:-8} lightexec echo ok",
-    "here:clean": "rm -rf \"$INIT_CWD/lib\" \"$INIT_CWD/dist\" \"$INIT_CWD/bin\"",
-    "here:babel": "babel --extensions .tsx,.ts --out-dir \"$INIT_CWD/lib\" \"$INIT_CWD/src\"",
-    "here:webpack": "babel --extensions .tsx,.ts --out-dir \"$INIT_CWD/lib\" \"$INIT_CWD/src\"",
-    "here:eslint": "eslint --ext .ts,.tsx --format stylish --no-color \"$INIT_CWD/src\"",
-    "here:test": "jest \"$INIT_CWD\""
+    "one:echo": "echo $INIT_CWD",
+    "one:clean": "rm -rf \"$INIT_CWD/lib\" \"$INIT_CWD/dist\" \"$INIT_CWD/bin\"",
+    "one:babel": "babel --extensions .tsx,.ts --out-dir \"$INIT_CWD/lib\" \"$INIT_CWD/src\"",
+    "one:webpack": "babel --extensions .tsx,.ts --out-dir \"$INIT_CWD/lib\" \"$INIT_CWD/src\"",
+    "one:eslint": "eslint --ext .ts,.tsx --format stylish --no-color \"$INIT_CWD/src\"",
+    "one:test": "jest \"$INIT_CWD\"",
+    "all:echo": "yarn workspaces foreach --all --topological-dev --parallel --jobs ${CI_LERNA_CONCURRENCY:-8} lightexec echo $(pwd) $PWD"
   },
   "devDependencies": {
     "@babel/cli": "7.11.6",
@@ -66,6 +61,7 @@
     "yarn": ">=1.22.0"
   },
   "dependencies": {
+    "@yarnpkg/core": "2.3.0",
     "@yarnpkg/pnpify": "2.3.1"
   }
 }
