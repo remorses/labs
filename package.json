@@ -13,7 +13,8 @@
     "one:webpack": "babel --extensions .tsx,.ts --out-dir \"$INIT_CWD/lib\" \"$INIT_CWD/src\"",
     "one:eslint": "eslint --ext .ts,.tsx --format stylish --no-color \"$INIT_CWD/src\"",
     "one:test": "jest \"$INIT_CWD\"",
-    "all:echo": "yarn workspaces foreach --all --topological-dev --parallel --jobs ${CI_LERNA_CONCURRENCY:-8} lightexec echo $(pwd) $PWD"
+    "all:echo": "yarn workspaces foreach --all --topological-dev --parallel --jobs ${JOB_CONCURRENCY:-8} exec echo $(pwd) $PWD $(env PWD)",
+    "all:env": "yarn workspaces foreach --all --topological-dev --parallel --jobs ${JOB_CONCURRENCY:-8} exec env PWD"
   },
   "devDependencies": {
     "@babel/cli": "7.11.6",
