@@ -11,8 +11,6 @@
     "/lib/**/*"
   ],
   "scripts": {
-    "build": "yarn build:lib",
-    "build:lib": "tsc ./src/**/* --outDir ./lib",
     "clean": "rm -rf lib"
   },
   "dependencies": {
