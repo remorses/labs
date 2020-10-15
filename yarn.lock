@@ -2704,6 +2704,7 @@ __metadata:
     "@babel/preset-react": 7.10.4
     "@babel/preset-typescript": 7.10.4
     "@babel/register": 7.11.5
+    "@types/jest": 26.0.14
     "@typescript-eslint/eslint-plugin": 4.4.0
     "@typescript-eslint/parser": 4.4.0
     "@yarnpkg/core": 2.3.0
@@ -3109,6 +3110,16 @@ __metadata:
   version: 24.0.0
   resolution: "@types/jest@npm:24.0.0"
   checksum: 661a428b567f0d2a3a7292f997f1aa136f807becaee51a3b2473fcbe66c7f4fc4bbc3c74361e55f5ff926778a1c77c379e7800f0667077330f9ea2f7b46d4f73
+  languageName: node
+  linkType: hard
+
+"@types/jest@npm:26.0.14":
+  version: 26.0.14
+  resolution: "@types/jest@npm:26.0.14"
+  dependencies:
+    jest-diff: ^25.2.1
+    pretty-format: ^25.2.1
+  checksum: bddbe82d12217c5217efabcad09e4fbe2c5eaecf9392da9b0edbe4c3d9fb240b3fab914f88c5f3708f6d5046640a2782458944873eae4ac01abcb17d32d3c78f
   languageName: node
   linkType: hard
 
@@ -14800,7 +14811,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:^25.1.0":
+"pretty-format@npm:^25.1.0, pretty-format@npm:^25.2.1":
   version: 25.5.0
   resolution: "pretty-format@npm:25.5.0"
   dependencies:

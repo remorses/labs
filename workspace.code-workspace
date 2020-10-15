@@ -6,6 +6,8 @@
   ],
   "settings": {
     "prettier.packageManager": "yarn",
-    "terminal.integrated.scrollback": 100000
+    "terminal.integrated.scrollback": 100000,
+    "typescript.tsdk": ".yarn/sdks/typescript/lib",
+    "typescript.enablePromptUseWorkspaceTsdk": true
   }
 }

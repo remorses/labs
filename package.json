@@ -4,8 +4,7 @@
   "workspaces": [
     "packages/*/*",
     "!packages/example/app-electron-react",
-    "!packages/example/app-react-native",
-    "!."
+    "!packages/example/app-react-native"
   ],
   "scripts": {
     "one:echo": "echo $INIT_CWD",
@@ -17,6 +16,7 @@
     "one:test": "jest \"$INIT_CWD\"",
     "all:echo": "yarn workspaces foreach --all --topological-dev --parallel --jobs ${JOB_CONCURRENCY:-8} exec echo $(pwd) $PWD $(env PWD)",
     "all:env": "yarn workspaces foreach --all --topological-dev --parallel --jobs ${JOB_CONCURRENCY:-8} exec env PWD",
+    "all:env2": "yarn workspaces foreach --all --topological-dev --parallel --jobs ${JOB_CONCURRENCY:-8} exec echo $(env PWD)",
     "all:clean": "rm -rf ./packages/*/*/lib ./packages/*/*/dist ./packages/*/*/bin",
     "all:babel": "yarn workspaces foreach --all --topological-dev --parallel --jobs ${JOB_CONCURRENCY:-8} exec yarn one:babel"
   },
@@ -66,6 +66,7 @@
     "yarn": ">=1.22.0"
   },
   "dependencies": {
+    "@types/jest": "26.0.14",
     "@yarnpkg/core": "2.3.0",
     "@yarnpkg/pnpify": "2.3.1"
   }
