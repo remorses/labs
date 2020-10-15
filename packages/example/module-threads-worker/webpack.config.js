@@ -2,6 +2,8 @@ const path = require("path");
 
 const NodemonPlugin = require("nodemon-webpack-plugin");
 
+const PnpWebpackPlugin = require("pnp-webpack-plugin");
+
 // const nodeExternals = require("webpack-node-externals");
 
 const baseConfig= {
@@ -21,13 +23,13 @@ const baseConfig= {
   },
   plugins: [new NodemonPlugin()],
   devtool: "",
-  // resolve: {
-  //   extensions: [".ts", ".tsx", ".js", ".jsx", ".css", ".mjs", ".json"],
-  //   plugins: [PnpWebpackPlugin]
-  // },
-  // resolveLoader: {
-  //   plugins: [PnpWebpackPlugin.moduleLoader(module)]
-  // },
+  resolve: {
+    extensions: [".ts", ".tsx", ".js", ".jsx", ".css", ".mjs", ".json"],
+    plugins: [PnpWebpackPlugin]
+  },
+  resolveLoader: {
+    plugins: [PnpWebpackPlugin.moduleLoader(module)]
+  },
   node: false,
   module: {
     rules: [

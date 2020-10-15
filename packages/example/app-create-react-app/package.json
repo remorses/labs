@@ -25,7 +25,7 @@
   },
   "scripts": {
     "dev": "craco start",
-    "build": "pnpm run build:dist",
+    "build": "yarn run build:dist",
     "build:dist": "craco build",
     "test": "craco test",
     "eject": "craco eject"

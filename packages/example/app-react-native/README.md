@@ -2,7 +2,7 @@
 
 By Vincent Lecrubier
 
-THIS PACKAGE USES NPM, NOT PNPM
+THIS PACKAGE USES NPM, NOT YARN
 
 ```
 npx react-native init appreactnative --template typescript
