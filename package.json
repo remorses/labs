@@ -4,17 +4,21 @@
   "workspaces": [
     "packages/*/*",
     "!packages/example/app-electron-react",
-    "!packages/example/app-react-native"
+    "!packages/example/app-react-native",
+    "!."
   ],
   "scripts": {
     "one:echo": "echo $INIT_CWD",
+    "one:env": "env",
     "one:clean": "rm -rf \"$INIT_CWD/lib\" \"$INIT_CWD/dist\" \"$INIT_CWD/bin\"",
     "one:babel": "babel --extensions .tsx,.ts --out-dir \"$INIT_CWD/lib\" \"$INIT_CWD/src\"",
     "one:webpack": "babel --extensions .tsx,.ts --out-dir \"$INIT_CWD/lib\" \"$INIT_CWD/src\"",
     "one:eslint": "eslint --ext .ts,.tsx --format stylish --no-color \"$INIT_CWD/src\"",
     "one:test": "jest \"$INIT_CWD\"",
     "all:echo": "yarn workspaces foreach --all --topological-dev --parallel --jobs ${JOB_CONCURRENCY:-8} exec echo $(pwd) $PWD $(env PWD)",
-    "all:env": "yarn workspaces foreach --all --topological-dev --parallel --jobs ${JOB_CONCURRENCY:-8} exec env PWD"
+    "all:env": "yarn workspaces foreach --all --topological-dev --parallel --jobs ${JOB_CONCURRENCY:-8} exec env PWD",
+    "all:clean": "rm -rf ./packages/*/*/lib ./packages/*/*/dist ./packages/*/*/bin",
+    "all:babel": "yarn workspaces foreach --all --topological-dev --parallel --jobs ${JOB_CONCURRENCY:-8} exec yarn one:babel"
   },
   "devDependencies": {
     "@babel/cli": "7.11.6",
