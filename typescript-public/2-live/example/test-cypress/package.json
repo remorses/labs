@@ -1,0 +1,33 @@
+{
+  "name": "@sterblue/example-test-cypress",
+  "version": "20.9.0",
+  "description": "example test using cypress",
+  "license": "UNLICENSED",
+  "author": "Vincent Lecrubier <vincent.lecrubier@sterblue.com>",
+  "private": true,
+  "sideEffects": false,
+  "main": "./src/index.ts",
+  "publishConfig": {
+    "main": "./lib/index.js",
+    "types": "./lib/index.d.ts"
+  },
+  "files": [
+    "/lib/**/*"
+  ],
+  "scripts": {
+    "build": "yarn build:lib",
+    "build:lib": "tsc ./src/**/* --outDir ./lib",
+    "clean": "rm -rf lib"
+  },
+  "dependencies": {
+    "react": "17.0.1"
+  },
+  "devDependencies": {
+    "@testing-library/react": "11.0.4",
+    "@types/jest": "24.0.0",
+    "@types/node": "12.0.0",
+    "@types/react": "16.9.49",
+    "@types/react-dom": "16.9.8",
+    "@types/testing-library__react": "10.2.0"
+  }
+}
