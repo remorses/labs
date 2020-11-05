@@ -1,0 +1,49 @@
+{
+  "name": "@sterblue/example-test-storybook",
+  "version": "20.9.0",
+  "description": "example test using storybook",
+  "license": "UNLICENSED",
+  "author": "Vincent Lecrubier <vincent.lecrubier@sterblue.com>",
+  "private": true,
+  "sideEffects": false,
+  "main": "./src/index.ts",
+  "publishConfig": {
+    "main": "./lib/index.js",
+    "types": "./lib/index.d.ts"
+  },
+  "files": [
+    "/lib/**/*"
+  ],
+  "scripts": {
+    "build": "yarn build:lib",
+    "build:lib": "tsc ./src/**/* --outDir ./lib",
+    "clean": "rm -rf lib",
+    "storybook": "start-storybook -p 6006 --no-dll",
+    "build-storybook": "build-storybook --no-dll"
+  },
+  "dependencies": {
+    "@sterblue/example-module-react": "workspace:typescript-public/2-live/example/module-react",
+    "@storybook/preset-typescript": "3.0.0",
+    "react": "17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.3",
+    "@mdx-js/react": "1.6.19",
+    "@storybook/addon-actions": "6.0.28",
+    "@storybook/addon-docs": "6.0.28",
+    "@storybook/addon-essentials": "6.0.28",
+    "@storybook/addon-links": "6.0.28",
+    "@storybook/core": "6.0.28",
+    "@storybook/react": "6.0.28",
+    "@testing-library/react": "11.0.4",
+    "@types/jest": "24.0.0",
+    "@types/node": "12.0.0",
+    "@types/react": "16.9.49",
+    "@types/react-dom": "16.9.8",
+    "@types/testing-library__react": "10.2.0",
+    "babel-loader": "8.1.0",
+    "core-js": "3.6.5",
+    "prop-types": "15.7.2",
+    "react-is": "17.0.1"
+  }
+}
