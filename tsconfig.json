@@ -24,6 +24,13 @@
     "target": "ES2018",
     "types": ["jest"]
   },
-  "exclude": ["packages/*/*/lib"],
-  "include": ["packages/*/*/src/**/*.ts", "packages/*/*/src/**/*.tsx"]
+  "exclude": [
+    "typescript-public/*/*/lib",
+    "typescript-public/*/*/dist",
+    "typescript-public/*/*/build"
+  ],
+  "include": [
+    "typescript-public/*/*/src/**/*.ts",
+    "typescript-public/*/*/src/**/*.tsx"
+  ]
 }

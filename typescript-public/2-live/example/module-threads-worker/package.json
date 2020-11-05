@@ -15,12 +15,8 @@
     "/src/**/*"
   ],
   "scripts": {
-    "start": "node ./lib/index.js",
-    "start:babel": "babel-node --only '../../..' --extensions '.ts' --config-file '../../../babel.config.js' './src/index.ts'",
-    "dev": "yarn run dev:webpack",
-    "dev:webpack": "webpack --watch",
-    "build": "yarn run build:lib",
-    "build:lib": "webpack"
+    "dev": "yarn one:webpack --watch",
+    "build": "yarn one:webpack"
   },
   "dependencies": {
     "@sterblue/example-module": "workspace:*",

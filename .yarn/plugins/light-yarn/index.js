@@ -76114,7 +76114,7 @@ const plugin = {
         return {
             hooks: {
                 afterAllInstalled() {
-                    console.error(chalk_1.default.green(`Invalidating light-yarn plugin cache`));
+                    // console.error(chalk_1.default.green(`Invalidating light-yarn plugin cache`));
                     exports.memoizer.invalidate();
                 },
             },
